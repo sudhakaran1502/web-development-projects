@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box;
+}
+nav{
+position:fixed;
+background:black;
+width:100%;
+z-index:1;
+}
+nav .menu{
+display:flex;
+align-items:center;
+padding:0 20px;
+justify-content:space-between;
+margin:auto;
+}
+.menu .title a{
+text-decoration:none;
+font-weight:600;
+font-size:40px;
+color:white;
+}
+.menu ul{
+display:inline-flex;
+}
+.menu ul li{
+text-decoration:none;
+padding-left:10px;
+list-style:none;
+}
+.menu ul li a{
+text-decoration:none;
+color:white;
+font-size:14px;
+font-weight:500;
+padding:3px 10px;
+border-radius:6px;
+transition:all 0.3s ease;
+}
+.menu ul li a:hover{
+background:white;
+color:black;
+}
+.img{
+background-image:url('https://wallpaperbat.com/img/109300-mountains-with-white-snow-free-stock-photo.jpg');
+height:100vh;
+width:100%;
+background-size:cover;
+background-position:center;
+position:relative;
+}
+.img::before{
+content:'';
+position:absolute;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.4);
+}
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:100%;
+text-align:center;
+padding:0 20px;
+}
+.center .para{
+font-size:50px;
+color:white;
+font-weight:600;
+text-align:center;
+}
+.center .para span{
+color:orange;
+}
+.center .subpara{
+font-size:15px;
+font-weight:500;
+color:white;
+text-align:center;
+}
+.center .btns{
+margin-top:20px;
+}
+.center .btns button{
+height:45px;
+width:180px;
+border-radius:5px;
+border:none;
+border:2px solid white;
+font-size:20px;
+padding:0 10px;
+margin:0 10px;
+cursor:pointer;
+outline:none;
+transition:all 0.3s ease;
+background:none;
+}
+.center .btns button a{
+text-decoration:none;
+color:white;
+transition:all 0.3s ease;
+}
+
+.center .btns button:hover{
+background:white;
+color:black;
+}
+.center .btns button a:hover{
+color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

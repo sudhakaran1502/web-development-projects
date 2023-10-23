@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+display:grid;
+height:100%;
+place-items:center;
+background:#1abc9c;
+}
+
+.box{
+background:white;
+margin:auto;
+width:380px;
+border-radius:5px;
+}
+.box .title{
+text-align:center;
+font-size:30px;
+font-weight:600;
+background:#16a085;
+border-radius:5px 5px 0 0;
+padding:20px;
+color:white;
+padding-left:20px;
+}
+form{
+padding:30px 20px 25px 20px;
+}
+form .row{
+height:60px;
+}
+form .row input{
+width:100%;
+height:40px;
+border-radius:5px;
+border:1px solid grey;
+cursor:pointer;
+padding-left:20px;
+outline:none;
+}
+.pass a{
+color:16a085;
+padding-left:10px;
+margin:-10px 0 15px 0;
+text-decoration:none;
+}
+.pass a:hover{
+text-decoration:underline;
+}
+
+form .sub input{
+margin-top:10px;
+color:white;
+font-size:18px;
+font-weight:500;
+background:#16a085;
+width:100%;
+height:40px;
+border-radius:5px;
+border:none;
+cursor:pointer;
+}
+form .sub input:hover{
+background:#12876f;
+}
+.note{
+margin-top:10px;
+text-align:center;
+}
+.note a{
+color:#16a085;
+text-decoration:none;
+}
+.note a:hover{
+text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

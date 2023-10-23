@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box;
+}
+.section{
+height:100vh;
+background-image:url('https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg');
+background-position:center;
+background-size:cover;
+background-repeat:non-repeat;
+}
+.hero{
+width:80%;
+margin:auto;
+padding:30px;
+}
+article h1{
+font-size:50px;
+font-weight:500;
+color:#fcba03;
+text-align:center;
+}
+article h1::after{
+content:'';
+height:3px;
+width:225px;
+background-color:#fcba03;
+display:block;
+margin:auto;
+}
+img{
+margin:auto;
+margin-top:40px;
+margin-bottom:20px;
+display:block;
+height:200px;
+width:200px;
+border-radius:50%;
+border:3px solid #bef4f7;
+}
+content{
+color:white;
+font-sixe:10px;
+line-height:1.5;
+text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
