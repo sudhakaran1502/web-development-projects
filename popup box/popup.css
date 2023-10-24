@@ -18,22 +18,71 @@ pointer-events:none;
 transition:all 0.3s ease;
 }
 .alertbox{
-position:absolute;
 display:flex;
+position:absolute;
+flex-direction:column;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-height:140px;
-width:400px;
+max-width:450px;
+width:100%;
 padding:30px;
-background:grey;
+background:white;
+align-items:center;
 text-align:center;
 border-radius:5px;
+z-index:5;
+opacity:0;
+pointer-events:none;
+transition:all 0.3s ease;
 }
-alertbox .logo{
+.alertbox .logo{
 height:100px;
 width:100px;
-background:blue;
+border-radius:50%;
+border:3px solid red;
+color:red;
+ext-align:center;
+line-height:98px;
+font-size:50px;
+}
+.alertbox header{
+font-size:35px;
+font-weight:500;
+margin:10px 0;
+}
+.alertbox p{
+font-size:20px;
+}
+.alertbox .btns{
+margin-top:20px;
+}
+.alertbox label{
+display:inline-flex;
+background:grey;
+height:50px;
+padding:10px 30px;
+font-size:20px;
+font-weight:400;
+color:white;
+cursor:pointer;
+border-radius:5px;
+margin:0px 10px;
+}
+.btns label:first-child{
+background:#2980b9;
+}
+.btns label:first-child:hover{
+background:#2573a7;
+}
+.btns label:last-child{
+background:red;
+}
+.btns label:last-child:hover{
+background:#d9210d;
+}
+
+
 
 
 
