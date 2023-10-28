@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+section{
+height:100%;
+width:100%;
+background:#4070f4;
+}
+section.dots{
