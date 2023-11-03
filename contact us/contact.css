@@ -26,9 +26,21 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 }
+.content .left::before{
+content:'';
+width:2px;
+height:70%;
+background:#afafb6;
+position:absolute;
+right:-15px;
+top:50%;
+transform:translateY(-50%);
+}
 .container .content .left{
 width:25%;
 height:100%;
+position:relative;
+margin-top:15px;
 }
 .content .left .details{
 margin:14px;
@@ -37,13 +49,66 @@ text-align:center;
 .content .left .details i{
 font-size:30px;
 color:#3e2093;
+margin-bottom:10px;
 }
+.content .left .details .topic{
+font-size:18px;
+font-weight:500;
+}
+.content .left .details .txt1,
+.content .left .details .txt2{
+font-size:14px;
+color:#afafb6;
+}
+
 .container .content .right{
 width:75%;
 margin-left:70px;
 }
 
-
+.content .right .topictxt{
+font-size:23px;
+font-weight:600;
+color:#3e2093;
+}
+.right .inputbox{
+height:50px;
+width:100%;
+margin:12px;
+}
+.right .inputbox input,
+.right .inputbox textarea{
+height:100%;
+width:100%;
+border:none;
+font-size:16px;
+font-weight:500;
+background:#F0F1F8;
+border-radius:6px;
+padding:0 15px;
+resize:none;
+}
+.right .mssgbox{
+min-height:110px;
+margin-top:6px;
+}
+.right .button{
+display:inline-block;
+margin-top:15px;
+}
+.right .button input{
+color:white;
+background:#3e2093;
+font-size:18px;
+border:none;
+cursor:pointer;
+border-radius:6px;
+padding:8px 16px;
+transition:all 0.3s ease;
+}
+.right .button input:hover{
+background:#5029bc;
+}
 
 
 
