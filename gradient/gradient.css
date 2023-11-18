@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+html,body{
+display:grid;
+height:100%;
+place-items:center;
+background:black;
+}
+.txt{
+outline:none;
+font-size:150px;
+font-weight:800;
+text-transform: uppercase;
+background:linear-gradient(135deg,#5335cf 0%,#de005e 25%,#f66648 50%,#de005e 75%,#5335cf 100%);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:animate 10s ease-in infinite;
+background-size:400%;
+}
+@keyframes animate{
+100%{
+background-position:400%;
+}
+}
