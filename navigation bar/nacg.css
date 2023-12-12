@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+nav{
+height:80px;
+background:black;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 50px 0 90px;
+}
+nav .logo{
+font-size:33px;
+font-weight:600;
+color:white;
+}
+nav ul{
+display:flex;
+list-style:none;
+}
+nav ul li{
+margin:0 5px;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:500;
+letter-spacing:1px;
+padding:8px 10px;
+border-radius:5px;
+transition:all 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+background:white;
+color:black;
+}
+
