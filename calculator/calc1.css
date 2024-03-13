@@ -10,6 +10,9 @@ body{
     height:100vh;
     width:100%;
     background:linear-gradient(#2196f3,#e91e63);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .bubbles{
     position:absolute;
@@ -100,4 +103,43 @@ body{
 }
 .bubbles span.seven:before{
     animation-delay:5.5s;
+}
+.container{
+    width: 360px;
+    background:rgba(255, 255, 255, 0.1);
+    padding:15px;
+    border-radius:12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+    backdrop-filter: blur(7px);
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+}
+.container input[type='text']{
+    width:100%;
+    height: 100px;
+    margin:0 3px;
+    border:none;
+    outline:none;
+    text-align: right;
+    color:#fff;
+    font-size:20px;
+    padding-right:10px;
+     background-color: transparent;
+}
+.container input[type='button']{
+    height: 65px;
+    color:#fff;
+    width:calc(100% / 4 - 8px);
+    background-color: transparent;
+    border-radius:12px;
+    margin-top: 15px;
+    outline:none;
+    border:none;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+.container input[type='button']:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+
+
 }
