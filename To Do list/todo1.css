@@ -34,3 +34,22 @@ body{
     padding: 18px 45px;
     border: 1px solid #ccc;
 }
+.input-field textarea:focus{
+    border-color: #4070f4;
+}
+textarea::-webkit-scrollbar{
+    display:none;
+}
+.input-field .note-icon{
+    position:absolute;
+    top:30%;
+    right:15px;
+    transform:translate(-50%);
+    pointer-events: none;
+    font-size: 24px;
+    color:#707070;
+
+}
+.input-field textarea:focus ~ .note-icon{
+    color: #4070f4;
+}
