@@ -53,3 +53,48 @@ textarea::-webkit-scrollbar{
 .input-field textarea:focus ~ .note-icon{
     color: #4070f4;
 }
+.container .todolist{
+    margin-top:20px;
+}
+.todolist .list{
+    position:relative;
+    display: flex;
+    list-style:none;
+    align-items: center;
+    background: #f2f2f2;
+    padding:15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top:10px;
+}
+.todolist .list input{
+    height: 16px;
+    min-width: 16px;
+    accent-color: #4070f4;
+    pointer-events: non;
+
+}
+.todolist .list .task{
+    margin:0 20px 0 15px;
+    word-break: break-al;
+
+}
+.list input:checked ~ .task{
+    text-decoration: line-through;
+}
+.todolist .list i{
+    position: absolute;
+    top:25%;
+    right:15px;
+    transform:translate(-50%);
+    font-size: 24px;
+    color:#707070;
+    opacity: 0.6;
+    display: none;
+}
+.todolist .list:hover i{
+    display: inline-flex;
+}
+.todolist .list i:hover{
+    opacity: 1;
+}
