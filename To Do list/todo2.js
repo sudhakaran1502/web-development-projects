@@ -9,6 +9,14 @@ inputfield.addEventListener('keyup',(e)=>{
     
 
     if(e.key==='Enter' && inputval.length>0){
-        console.log('valid');
+        let litag= `<li class="list">
+        <input type="checkbox">
+        <span class="task">${inputval}</span>
+        <i class='bx bx-trash'></i>
+    </li>`;
+
+    todolist.insertAdjacentHTML('beforeend',litag);
+    inputfield.value='';
+   
     }
 });
