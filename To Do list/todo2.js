@@ -9,7 +9,7 @@ inputfield.addEventListener('keyup',(e)=>{
     
 
     if(e.key==='Enter' && inputval.length>0){
-        let litag= `<li class="list">
+        let litag= `<li class="list" onclick='handlestatus(this)'>
         <input type="checkbox">
         <span class="task">${inputval}</span>
         <i class='bx bx-trash'></i>
@@ -20,3 +20,6 @@ inputfield.addEventListener('keyup',(e)=>{
    
     }
 });
+function handlestatus(e){
+    
+}
