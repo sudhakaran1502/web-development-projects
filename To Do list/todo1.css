@@ -71,7 +71,7 @@ textarea::-webkit-scrollbar{
     height: 16px;
     min-width: 16px;
     accent-color: #4070f4;
-    pointer-events: non;
+    pointer-events: none;
 
 }
 .todolist .list .task{
