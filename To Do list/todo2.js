@@ -21,5 +21,7 @@ inputfield.addEventListener('keyup',(e)=>{
     }
 });
 function handlestatus(e){
+    const checkbox= e.querySelector('input')
+    checkbox.checked=checkbox.checked
     
 }
