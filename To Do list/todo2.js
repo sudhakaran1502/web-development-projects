@@ -80,6 +80,7 @@ function deleteTask(e) {
   allTasks();
 }
 
+
 //deleting all the tasks while we click on the clear button.
 clearButton.addEventListener("click", () => {
   todoLists.innerHTML = "";

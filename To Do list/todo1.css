@@ -9,8 +9,10 @@
 body{
     background-color: #e3f2fd;
 }
+
 .container{
-    position: relative;
+    position:relative;
+
     max-width:480px;
     width:100%;
     border-radius:8px;
