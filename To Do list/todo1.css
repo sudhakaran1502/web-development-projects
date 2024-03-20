@@ -35,6 +35,8 @@ body{
     border-radius: 8px;
     padding: 18px 45px;
     border: 1px solid #ccc;
+    
+
 }
 .input-field textarea:focus{
     border-color: #4070f4;
@@ -57,6 +59,10 @@ textarea::-webkit-scrollbar{
 }
 .container .todolist{
     margin-top:20px;
+    max-height: 380px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-right: 10px;
 }
 .todolist .list{
     position:relative;
@@ -74,8 +80,7 @@ textarea::-webkit-scrollbar{
     min-width: 16px;
     accent-color: #4070f4;
     pointer-events: none;
-   
-
+    
 }
 .todolist .list .task{
     margin:0 20px 0 15px;
@@ -120,6 +125,7 @@ textarea::-webkit-scrollbar{
     border-radius: 4px;
     cursor: pointer;
     transition: all ease 0.3s;
+    white-space: nowrap;
 }
 .pending-task .clear-button:hover{
     background-color:#0e4bf1;
