@@ -1,40 +1,15 @@
-/*const inputfield = document.querySelector('.input-field textarea'),
-todolist= document.querySelector('.todolist'),
-pendingnum= document.querySelector('.pending-num',),
-clearbutton= document.querySelector('.clear-button');
-
-//console.log( inputfield,todolist,pendingnum,clearbutton)
-inputfield.addEventListener('keyup',(e)=>{
-    let inputval=inputfield.value.trim();
-    
-
-    if(e.key==='Enter' && inputval.length>0){
-        let litag= `<li class="list" onclick='handlestatus(this)'>
-        <input type="checkbox">
-        <span class="task">${inputval}</span>
-        <i class='bx bx-trash'></i>
-    </li>`;
-
-    todolist.insertAdjacentHTML('beforeend',litag);
-    inputfield.value='';
-   
-    }
-});
-function handlestatus(e){
-    const checkbox= e.querySelector('input')
-    checkbox.checked=checkbox.checked
-    
-}*/
 //Getting all required elements
 const inputField = document.querySelector(".input-field textarea"),
   todoLists = document.querySelector(".todoList"),
   pendingNum = document.querySelector(".pending-num"),
   clearButton = document.querySelector(".clear-button");
 
+
 //we will call this function while adding, deleting and checking-unchecking the task
 function allTasks() {
   let tasks = document.querySelectorAll(".pending");
 
+  
   //if tasks' length is 0 then pending num text content will be no, if not then pending num value will be task's length
   pendingNum.textContent = tasks.length === 0 ? "no" : tasks.length;
 
