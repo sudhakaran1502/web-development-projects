@@ -1,3 +1,4 @@
+
 //Getting all required elements
 const inputField = document.querySelector(".input-field textarea"),
   todoLists = document.querySelector(".todoList"),
@@ -9,7 +10,7 @@ const inputField = document.querySelector(".input-field textarea"),
 function allTasks() {
   let tasks = document.querySelectorAll(".pending");
 
-  
+
   //if tasks' length is 0 then pending num text content will be no, if not then pending num value will be task's length
   pendingNum.textContent = tasks.length === 0 ? "no" : tasks.length;
 
