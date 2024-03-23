@@ -48,6 +48,7 @@ form .input-field{
     padding: 3px;
     cursor: pointer;
 }
+
 .input-field input{
     height: 100%;
     width:100%;
@@ -64,7 +65,10 @@ form .input-field{
     margin-top: 6px;
     color:red;
     font-size: 13px;
-    //display: none;
+    display: none;
+}
+.invalid .error{
+    display: flex;
 }
 .error .error-icon{
     margin-right: 5px;
@@ -75,4 +79,18 @@ form .input-field{
 }
 .create-password .error-icon{
     margin-top: 4px;
+}
+.button{
+    margin: 25px 0 6px;
+}
+.button input{
+    color:white;
+    background-color: #4070f4;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: #0e4bf1;
 }
