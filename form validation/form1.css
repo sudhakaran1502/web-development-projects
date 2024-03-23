@@ -31,13 +31,22 @@ body{
     margin-top: 30px;
 }
 form .field{
-
+    margin-bottom: 20px;
 }
 form .input-field{
     position:relative;
     height:55px;
     width:100%;
-
+}
+.input-field .show-hide{
+    position: absolute;
+    right: 13px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color:#919191;
+    padding: 3px;
+    cursor: pointer;
 }
 .input-field input{
     height: 100%;
@@ -48,4 +57,22 @@ form .input-field{
     padding: 0 15px;
     border: 1px solid #d1d1d1;
 
+}
+.field .error{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color:red;
+    font-size: 13px;
+    //display: none;
+}
+.error .error-icon{
+    margin-right: 5px;
+    font-size: 15px;
+}
+.create-password .error{
+    align-items: flex-start;
+}
+.create-password .error-icon{
+    margin-top: 4px;
 }
