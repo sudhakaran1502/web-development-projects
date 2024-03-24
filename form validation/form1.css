@@ -59,6 +59,9 @@ form .input-field{
     border: 1px solid #d1d1d1;
 
 }
+.invalid input{
+    border-color: red;
+}
 .field .error{
     display: flex;
     align-items: center;
