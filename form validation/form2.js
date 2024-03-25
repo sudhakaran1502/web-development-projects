@@ -15,7 +15,18 @@ function checkemail() {
     emailfield.classList.remove('invalid');
 }
 
+const eyeicon=document.querySelectorAll('.show-hide');
+
+eyeicon.forEach((eyeicon) => {
+    eyeicon.addEventListener('click',() => {
+        const pinput=eyeicon.parentElement.querySelector('input');
+        eyeicon.classList.replace('bx-hide','bx-show');
+    });
+});
+
 form.addEventListener('submit',(e) =>{
     e.preventDefault(); //prevent submit
     checkemail();
+
+    emailinput.addEventListener('keyup', checkmail);
 });
