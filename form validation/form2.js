@@ -20,13 +20,35 @@ const eyeicon=document.querySelectorAll('.show-hide');
 eyeicon.forEach((eyeicon) => {
     eyeicon.addEventListener('click',() => {
         const pinput=eyeicon.parentElement.querySelector('input');
-        eyeicon.classList.replace('bx-hide','bx-show');
-    });
+        if (pinput.type==='password'){
+            eyeicon.classList.replace('bx-hide','bx-show');
+            return (pinput.type='text');
+        }
+        eyeicon.classList.replace('bx-show','bx-hide')
+        return (pinput.type='password')
+     });
 });
 
+//pass validation
+function createpass(){
+    const passpatern=  /^[A-Za-z]\w{7,14}$/;
+    if(!passinput.value.match(passpatern)){
+        passfield.classList.add('invalid');
+
+    }
+
+}
+
+
+
+
+//calling function on form submit
 form.addEventListener('submit',(e) =>{
     e.preventDefault(); //prevent submit
     checkemail();
+    createpass();
 
+    //calling function on key up
     emailinput.addEventListener('keyup', checkmail);
+    passinput.addEventListener('keyup',createpass);
 });
