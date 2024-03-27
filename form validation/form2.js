@@ -5,6 +5,7 @@ passfield=form.querySelector('.create-password'),
 passinput=form.querySelector('.password'),
 cpassfield=form.querySelector('.cpassword-field'),
 cpassinput=form.querySelector('.cpassword');
+button=form.querySelector('.button');
 
 //email check
 function checkemail() {
@@ -29,16 +30,29 @@ eyeicon.forEach((eyeicon) => {
      });
 });
 
+//cpass confirm
+function checkpass(){
+    if(passinput.value !== cpassinput.value || cpassinput.value===''){
+        return cpassfield.classList.add('invalid');
+    }
+    cpassfield.classList.remove('invalid');
+}
+
 //pass validation
 function createpass(){
     const passpatern=  /^[A-Za-z]\w{7,14}$/;
     if(!passinput.value.match(passpatern)){
-        passfield.classList.add('invalid');
+      return passfield.classList.add('invalid');
 
+    }
+    passfield.classList.remove('invalid');
+}
+function clickbtn(){
+    if(classList.remove('invalid')){
+        alert('sucessfully registered')
     }
 
 }
-
 
 
 
@@ -47,8 +61,12 @@ form.addEventListener('submit',(e) =>{
     e.preventDefault(); //prevent submit
     checkemail();
     createpass();
+    checkpass();
+    clickbtn();
 
     //calling function on key up
-    emailinput.addEventListener('keyup', checkmail);
+    emailinput.addEventListener('keyup', checkemail);
     passinput.addEventListener('keyup',createpass);
+    cpassinput.addEventListener('keyup',checkpass);
+    button.addEventListener('click',clickbtn);
 });
