@@ -16,7 +16,7 @@
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background-color: red;
+    background-color: crimson;
     font-family:'ubuntu', sans-serif ;
 }
 .navbar .max-width{
@@ -43,9 +43,33 @@
 /*home styling*/
 .home{
     display: flex;
-    background:url('https://img.freepik.com/premium-photo/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg') no-repeat center;
-    background-size: 100% 100%;
+    background-image:url('home1.jpeg');
+    background-position: center;
+    background-position-y:1px ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     min-height: 500px;
     color: white;
+    font-family: 'ubuntu',sans-serif;
+}
+.home .max-width{
+    margin: auto 0px auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
 }
