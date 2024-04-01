@@ -55,8 +55,15 @@
 .navbar .menu li a:hover{
     color:crimson;
 }
-.navbar .sticky .menu li a:hover{
+.navbar.sticky .menu li a:hover{
     color:white;
+}
+/*menu btn*/
+.menu-btn{
+    color:white;
+    font-size: 23px;
+    cursor:pointer;
+    display: none;
 }
 
 /*home styling*/
@@ -91,4 +98,34 @@
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
+}
+
+/*responsive media query start*/
+@media(max-width:940px ){
+    .max-width{
+    padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 1;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:0;
+        top:0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }
