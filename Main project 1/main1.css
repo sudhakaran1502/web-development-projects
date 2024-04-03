@@ -20,7 +20,7 @@
     font-family:'ubuntu', sans-serif ;
     transition: all 0.3s ease;
 }
-.navbar .sticky{
+.sticky{
     padding: 15px 0;
     background: crimson;
 }
@@ -38,7 +38,7 @@
     color:crimson;
     transition: all 0.3s ease;
 }
-.navbar .sticky .logo a span{
+.sticky .logo a span{
     color:white;
 }
 .navbar .menu li{
@@ -55,7 +55,7 @@
 .navbar .menu li a:hover{
     color:crimson;
 }
-.navbar.sticky .menu li a:hover{
+.sticky .menu li a:hover{
     color:white;
 }
 /*menu btn*/
@@ -95,6 +95,9 @@
     font-size: 40px;
     margin: 5px 0;
 }
+.sudh{
+    background-color: green;
+}
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
@@ -107,21 +110,30 @@
     }
     .menu-btn{
         display: block;
-        z-index: 1;
+        z-index:1;
     }
+    
+    
     .navbar .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
-        left:0;
+        left:-100%;
         top:0;
         background: #111;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .menu-btn2 .active{
+        color:white;
+    }
+    .navbar .menu.active{
+        left:0;
 
     }
     .navbar .menu li{
-        
+
         display: block;
     }
     .navbar .menu li a{

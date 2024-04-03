@@ -1,14 +1,15 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.navbar').addclass('sticky');
+            $('.navbar').addClass('sticky');
         }else{
-            $('.navbar').removeclass('sticky');
+            $('.navbar').removeClass('sticky');
         }
     });
     //toogle menu
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active');
+        $('.menu-btn2').toggleClass('active');
     });
     
 });
