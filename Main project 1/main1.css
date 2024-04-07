@@ -205,10 +205,10 @@ section{
     background: none;
 }
 /*skills*/
-.skills{
+.services{
     font-family: 'poppins', sans-serif;
 }
-.skills .title{
+.services .title{
     position: relative;
     font-size: 40px;
     font-weight: 500;
@@ -217,7 +217,7 @@ section{
     text-align: center;
     font-family: 'ubuntu',sans-serif;
 }
-.skills .title::before{
+.services .title::before{
     position: absolute;
     content: '';
     width: 180px;
@@ -227,7 +227,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.skills .title::after{
+.services .title::after{
     position: absolute;
     content: 'Who i am';
     font-size: 20px;
@@ -325,6 +325,7 @@ section{
     .about .about-content .right{
         flex:100%;
     }
+}
 
 @media(max-width:690px ){
     .max-width{
