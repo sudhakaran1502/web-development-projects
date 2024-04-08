@@ -155,7 +155,8 @@ section{
     background:white;
     transform: translateX(-50%);
 }
-.about .about-content{
+.about .about-content ,
+.services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -204,9 +205,11 @@ section{
     color: crimson;
     background: none;
 }
-/*skills*/
+/*services*/
 .services{
     font-family: 'poppins', sans-serif;
+    background: #111;
+    color:white;
 }
 .services .title{
     position: relative;
@@ -218,27 +221,94 @@ section{
     font-family: 'ubuntu',sans-serif;
 }
 .services .title::before{
+    background: white;
     position: absolute;
     content: '';
     width: 180px;
     height: 3px;
     bottom:0px;
     left: 50%;
-    background: #111;
     transform: translateX(-50%);
 }
 .services .title::after{
+    background: #111;
     position: absolute;
-    content: 'Who i am';
+    content: 'What i provide';
     font-size: 20px;
     padding: 5px;
     color: crimson;
     bottom: -12px;
     left: 50%;
-    background:white;
     transform: translateX(-50%);
 }
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+    
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: white;
+}
+.services .serv-content .card .text{
+    font-size:25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
+/*skills*/
+.skills{
+    font-family: 'poppins', sans-serif;
+    
+}
+.skills .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'ubuntu',sans-serif;
+}
+.skills .title::before{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 180px;
+    height: 3px;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    background: white;
+    position: absolute;
+    content: 'What i provide';
+    font-size: 20px;
+    padding: 5px;
+    color: crimson;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -325,6 +395,10 @@ section{
     .about .about-content .right{
         flex:100%;
     }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:690px ){
@@ -341,5 +415,8 @@ section{
         font-size: 20px ;
         padding: 9px 25px;
         
+    }
+    .services .serv-content .card{
+        width: 100%;
     }
 }
