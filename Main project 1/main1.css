@@ -157,7 +157,8 @@ section{
 }
 .about .about-content ,
 .services .serv-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -439,9 +440,74 @@ section{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    
+
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin:0 5px;
+    outline: none !important;
+    border-radius:50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+
+}
+.owl-dot.active{
+    width:35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson !important;
 }
 
+/*contact*/
+.contact{
+    font-family: 'poppins', sans-serif;
+    
+}
+.contact .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'ubuntu',sans-serif;
+}
+.contact .title::before{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 180px;
+    height: 3px;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    background:white;
+    position: absolute;
+    content: 'get in touch';
+    font-size: 20px;
+    padding: 5px;
+    color: crimson;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .contact-content .column{
+    width:calc(50%-30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
 
 
 
