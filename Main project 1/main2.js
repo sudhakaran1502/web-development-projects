@@ -10,7 +10,6 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active');
         $('.menu-btn i').toggleClass('active');
-        //$('.navbar .menu li').toogleClass('active');
     });
 
     //owl carousel
