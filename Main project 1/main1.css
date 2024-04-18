@@ -647,6 +647,7 @@ footer span a:hover{
         top:0;
         background: black;
         text-align: center;
+        /*background:red*/
         padding-top: 80px;
         transition: all 0.25s ease;
     }
