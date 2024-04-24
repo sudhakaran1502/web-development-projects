@@ -39,3 +39,19 @@ nav{
     border-bottom: 2px solid green;
     cursor: pointer;
 }
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    color: lightgrey;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+.slider{
+     background: url('https://media.istockphoto.com/id/1419117748/photo/old-wall-texture-cement-dirty-gray-with-black-background-abstract-grey-and-silver-color.webp?b=1&s=170667a&w=0&k=20&c=KI-m7WiMl2YDY5nSyAxxsta5ZPwjY1x6WwSCRdZq-VA=');
+    
+}
