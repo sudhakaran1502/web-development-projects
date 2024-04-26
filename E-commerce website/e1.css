@@ -81,6 +81,7 @@ nav{
     text-align: center;
     font-weight: 900;
     color: white;
+    z-index:1;
 }
 .sliderprice{
     position: absolute;
@@ -91,4 +92,5 @@ nav{
     font-weight: 300;
     color: white;
     border: 1px solid grey;
+    z-index: 1;
 }
