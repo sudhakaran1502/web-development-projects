@@ -52,6 +52,43 @@ nav{
 
 }
 .slider{
-     background: url('https://media.istockphoto.com/id/1419117748/photo/old-wall-texture-cement-dirty-gray-with-black-background-abstract-grey-and-silver-color.webp?b=1&s=170667a&w=0&k=20&c=KI-m7WiMl2YDY5nSyAxxsta5ZPwjY1x6WwSCRdZq-VA=');
-    
+    lip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+     
+}
+.sliderwrapper{
+    display:flex;
+    width:500vw;
+}
+.slideritem{
+    position: relative;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slidebg{
+    width:750px;
+    height:750px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+}
+.slidertitle{
+    position: absolute;
+    top:10%;
+    right:10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+.sliderprice{
+    position: absolute;
+    top:10%;
+    left:10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    border: 1px solid grey;
 }
