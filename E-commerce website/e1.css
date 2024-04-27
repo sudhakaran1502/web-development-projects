@@ -52,6 +52,7 @@ nav{
 
 }
 .slider{
+    background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg");
     lip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
      
 }
@@ -70,8 +71,12 @@ nav{
     width:750px;
     height:750px;
     border-radius: 50%;
-    background: yellow;
+    ackground: yellow;
     position: absolute;
+}
+.sliderimg{
+    z-index: 1;
+
 }
 .slidertitle{
     position: absolute;
@@ -94,3 +99,52 @@ nav{
     border: 1px solid grey;
     z-index: 1;
 }
+.buybutton{
+    position: absolute;
+    top:50%;
+    right:10%;
+    font-size: 30px;
+    font-weight: 900;
+    background: black;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5S ease;
+}
+.buybutton:hover{
+    background-color: white;
+    color:black;
+}
+.slideritem:nth-child(1) .slidebg{
+    background: #369e62;
+}
+.slideritem:nth-child(2) .slidebg{
+    background: rebeccapurple;
+}
+.slideritem:nth-child(3) .slidebg{
+    background: teal;
+}
+.slideritem:nth-child(4) .slidebg{
+    background: cornflowerblue;
+}
+.slideritem:nth-child(5) .slidebg{
+    background: rgb(124,115,80);
+}
+
+.slideritem:nth-child(1) .sliderprice{
+    color: #369e62;
+}
+.slideritem:nth-child(2) .sliderprice{
+    color: rebeccapurple;
+}
+.slideritem:nth-child(3) .sliderprice{
+    color: teal;
+}
+.slideritem:nth-child(4) .sliderprice{
+    color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderprice{
+    color:  rgb(124,115,80);
+}
+
