@@ -1,1 +1,2 @@
-console.log('ddff')
+const wrapper=document.querySelector('.sliderwrapper'),
+menuitems=document.querySelectorAll('.menuitem');
