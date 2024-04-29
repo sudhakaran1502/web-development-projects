@@ -53,12 +53,14 @@ nav{
 }
 .slider{
     background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg");
-    lip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
      
 }
 .sliderwrapper{
     display:flex;
     width:500vw;
+    transition: all 1s ease-in-out;
 }
 .slideritem{
     position: relative;
