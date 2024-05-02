@@ -70,8 +70,8 @@ nav{
     align-items: center;
 }
 .slidebg{
-    width:750px;
-    height:750px;
+    width:650px;
+    height:650px;
     border-radius: 50%;
     ackground: yellow;
     position: absolute;
@@ -93,8 +93,8 @@ nav{
 .sliderprice{
     position: absolute;
     top:10%;
-    left:10%;
-    font-size: 60px;
+    left:5%;
+    font-size: 50px;
     text-align: center;
     font-weight: 300;
     color: white;
