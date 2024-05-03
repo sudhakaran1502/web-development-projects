@@ -180,3 +180,42 @@ nav{
     height: 100px;
 
 }
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.productimg{
+    width:50%;
+
+}
+.productdetails{
+    position: absolute;
+    top:10%;
+    right:0;
+    width: 40%;
+    padding: 50px;
+
+
+}
+.producttitle{
+    font-size: 75px;
+    font-weight: 900;
+
+}
+.productdesc{
+    font-size: 24px;
+    color: gray;
+
+}
+.colors,.sizes{
+    display: flex;
+}
+.color{
+    width:32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+}
