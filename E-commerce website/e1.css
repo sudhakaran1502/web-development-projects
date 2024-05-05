@@ -218,12 +218,12 @@ nav{
     width:32px;
     height: 32px;
     border-radius: 5px;
-    background-color: black;
+    background-color: sandybrown;
     margin-right: 10px;
     cursor: pointer;
 }
 .color:last-child{
-    background-color: darkblue;
+    background-color: black;
 }
 .size{
     padding: 5px 20px;
@@ -232,3 +232,17 @@ nav{
     cursor: pointer;
     font-size: 20px;
 }
+.productbutton{
+    float:right;
+    padding: 10px 20px;
+    background-color: black;
+    color:white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.productbutton:hover{
+    background-color: white;
+    color: black;
+}
+
