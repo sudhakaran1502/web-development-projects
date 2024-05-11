@@ -116,9 +116,20 @@ menuitems.forEach((item,index)=>{
     
 });
 
-/currentproductcolors.forEach((color,index) =>{
-    color.addEventListener(click,() => {
+currentproductcolors.forEach((color,index) =>{
+    color.addEventListener('click',() => {
         currentproductimg.src = choosenproduct.colors[index].img;
 
+    });
+});
+
+currentproductsizes.forEach((size,index)=>{
+    size.addEventListener('click',()=>{
+        currentproductsizes.forEach((size)=>{
+            size.style.backgroundColor='white'
+            size.style.color='black'
+        });
+        size.style.backgroundColor='black'
+        size.style.color='white'
     });
 });
