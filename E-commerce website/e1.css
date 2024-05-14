@@ -185,24 +185,24 @@ nav{
 }
 
 .product{
-    heigh;
     background-color: whitesmoke;
     position: relative;
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 .payment{
     width:500px;
     height:500px;
     background-color: white;
     position: absolute;
-    top: 100px;;
+    top: 250px;;
     right: 0;
     left: 0;
     margin: auto;
     padding: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     box-shadow: 0 0 13px 2px rgba(0,0,0,0.3);
+    display: none;
 }
 .paytitle{
     font-size: 20px;
@@ -318,4 +318,16 @@ label{
     color: black;
 }
 
+.gallery{
+    padding: 50px;
+    display: flex;
+    
+}
+.galleryitem{
+    flex:1;
+    padding: 50px;
+}
+.galleryimg{
+    width:100%;
+}
 
