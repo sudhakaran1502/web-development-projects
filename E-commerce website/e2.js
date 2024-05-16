@@ -105,7 +105,7 @@ menuitems.forEach((item,index)=>{
 
         //change texts of currentproduct
         currentproducttitle.textContent = choosenproduct.title;
-        currentproductprice.textContent = choosenproduct.price;
+        currentproductprice.textContent = '$' + choosenproduct.price;
         currentproductimg.src = choosenproduct.colors[0].img;
 
         //assign new colors
@@ -144,3 +144,13 @@ productbutton.addEventListener('click',() =>{
 close.addEventListener('click',() =>{
     payment.style.display='none'
 })
+/*const productbutton= document.querySelector('.productbutton');
+const payment= document.querySelector('.payment');
+const close= document.querySelector('.close');
+
+productbutton.addEventListener('click',() =>{
+    payment.style.display='flex'
+})
+close.addEventListener('click',() =>{
+    payment.style.display='none'
+})*/
