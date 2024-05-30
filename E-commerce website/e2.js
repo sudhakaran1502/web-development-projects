@@ -134,7 +134,7 @@ currentproductsizes.forEach((size,index)=>{
     });
 });
 
-/*const productbutton= document.querySelector('.productbutton');
+const productbutton= document.querySelector('.productbutton');
 const payment= document.querySelector('.payment');
 const close= document.querySelector('.close');
 
@@ -143,6 +143,6 @@ productbutton.addEventListener('click',() =>{
 })
 close.addEventListener('click',() =>{
     payment.style.display='none'
-})*/
+})
 
 
