@@ -278,6 +278,10 @@ section{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.services .serv-content .card p{
+    text-align: justify;
+    margin: 10px 0 7px 0;
+}
 
 /*skills*/
 .skills{

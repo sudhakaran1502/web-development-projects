@@ -47,12 +47,12 @@ function createpass(){
     }
     passfield.classList.remove('invalid');
 }
-function clickbtn(){
+/*function clickbtn(){
     if(classList.remove('invalid')){
         alert('sucessfully registered')
     }
 
-}
+}*/
 
 
 
@@ -69,4 +69,13 @@ form.addEventListener('submit',(e) =>{
     passinput.addEventListener('keyup',createpass);
     cpassinput.addEventListener('keyup',checkpass);
     button.addEventListener('click',clickbtn);
+
+    if(
+        !emailfield.classList.contains('invalid') &&
+        !passfield.classList.contains('invalid') &&
+        !cpassfield.classList.contains('invalid')
+
+    ){
+        location.href=form.getAttribute("action");
+    }
 });
