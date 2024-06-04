@@ -40,7 +40,7 @@ function checkpass(){
 
 //pass validation
 function createpass(){
-    const passpatern=  /^[A-Za-z]\w{7,14}$/;
+    const passpatern=  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     if(!passinput.value.match(passpatern)){
       return passfield.classList.add('invalid');
 
@@ -62,13 +62,13 @@ form.addEventListener('submit',(e) =>{
     checkemail();
     createpass();
     checkpass();
-    clickbtn();
+    //clickbtn();
 
     //calling function on key up
     emailinput.addEventListener('keyup', checkemail);
     passinput.addEventListener('keyup',createpass);
     cpassinput.addEventListener('keyup',checkpass);
-    button.addEventListener('click',clickbtn);
+    //button.addEventListener('click',clickbtn);
 
     if(
         !emailfield.classList.contains('invalid') &&
