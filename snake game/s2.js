@@ -9,13 +9,17 @@ var context;
 var snakex = blocksize * 5;
 var snakeY = blocksize * 5;
 
+//food
+var foodX;
+var foodY;
 
 window.onload = function(){
     board = document.getElementById('board');
     board.height = rows*blocksize;
     board.width = cols*blocksize;
     context = board.getContext('2d') //for drawing on the board
-
+    
+    placeFood();
     update();
 
 }
@@ -25,5 +29,13 @@ function update(){
 
     context.fillStyle='lime';
     context.fillRect(snakex,snakeY,blocksize,blocksize);
+
+    context.fillStyle='red';
+    context.fillRect(foodX,foodY,blocksize,blocksize);
+}
+
+function placeFood(){
+    foodX= Math.floor(Math.random() * cols) * blocksize;
+    foodY= Math.floor(Math.random() * rows) * blocksize;
 
 }
