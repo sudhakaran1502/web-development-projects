@@ -9,6 +9,9 @@ var context;
 var snakex = blocksize * 5;
 var snakeY = blocksize * 5;
 
+var velocityX=0;
+var velocityY=0;
+
 //food
 var foodX;
 var foodY;
@@ -20,6 +23,7 @@ window.onload = function(){
     context = board.getContext('2d') //for drawing on the board
     
     placeFood();
+    document.addEventListener('keyup', changeDirection);
     update();
 
 }
@@ -32,6 +36,13 @@ function update(){
 
     context.fillStyle='red';
     context.fillRect(foodX,foodY,blocksize,blocksize);
+}
+
+function changeDirection(e){
+    if (e.code == "ArrowUp"){
+        velocityX=0;
+        velocityY=-1;
+    }
 }
 
 function placeFood(){
