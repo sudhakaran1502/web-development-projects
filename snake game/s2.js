@@ -32,6 +32,8 @@ function update(){
     context.fillRect(0,0,board.width, board.height);
 
     context.fillStyle='lime';
+    snakex += velocityX;
+    snakeY += velocityY;
     context.fillRect(snakex,snakeY,blocksize,blocksize);
 
     context.fillStyle='red';
@@ -43,6 +45,20 @@ function changeDirection(e){
         velocityX=0;
         velocityY=-1;
     }
+    else if (e.code == "ArrowDown"){
+        velocityX=0;
+        velocityY=1;
+    }
+    else if (e.code == "ArrowLeft"){
+        velocityX=-1;
+        velocityY=0;
+    }
+    else if (e.code == "ArrowRight"){
+        velocityX=1;
+        velocityY=0;
+    }
+    
+
 }
 
 function placeFood(){
