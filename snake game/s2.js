@@ -68,31 +68,6 @@ function placeFood(){
 
 }
 //
-function changeDirection(e){
-    if (e.code == "ArrowUp"){
-        velocityX=0;
-        velocityY=-1;
-    }
-    else if (e.code == "ArrowDown"){
-        velocityX=0;
-        velocityY=1;
-    }
-    else if (e.code == "ArrowLeft"){
-        velocityX=-1;
-        velocityY=0;
-    }
-    else if (e.code == "ArrowRight"){
-        velocityX=1;
-        velocityY=0;
-    }
-    
 
-}
-
-function placeFood(){
-    foodX= Math.floor(Math.random() * cols) * blocksize;
-    foodY= Math.floor(Math.random() * rows) * blocksize;
-
-}
 
 
