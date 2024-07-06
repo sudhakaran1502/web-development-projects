@@ -162,6 +162,11 @@ snakeBody.push([foodX, foodY]);
 placeFood();
 }
 }
+snakeBody[i] = snakeBody[i-1];
+}
+if (snakeBody.length) {
+    snakeBody[0] = [snakeX, snakeY];
+  
 
 .
 if (snakeBody.length) {
@@ -169,12 +174,4 @@ snakeBody[0] = [snakeX, snakeY];
 }
 
 
-        snakeBody[i] = snakeBody[i-1];
-        }
-        if (snakeBody.length) {
-            snakeBody[0] = [snakeX, snakeY];
-            }
-            
-            
-                    snakeBody[i] = snakeBody[i-1];
-                    }
+       
