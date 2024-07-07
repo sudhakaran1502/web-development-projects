@@ -164,13 +164,21 @@ placeFood();
 }
 snakeBody[i] = snakeBody[i-1];
 }
-if (snakeBody.length) {
-    snakeBody[0] = [snakeX, snakeY];
-  
-
-.
-if (snakeBody.length) {
-snakeBody[0] = [snakeX, snakeY];
+for (let i = 0; i < snakeBody.length; i++) {
+    if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
+        gameOver = true;
+        alert("Game Over");
+    }
+}
+}
+snakeBody.push([foodX, foodY]);
+placeFood();
+}
+}
+snakeBody[i] = snakeBody[i-1];
+}
+i
+i
 }
 
 
