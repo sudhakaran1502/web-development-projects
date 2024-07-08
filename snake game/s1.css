@@ -7,3 +7,11 @@ body {
         <canvas id="board"> </canvas>
     </body>
 </html>*/
+snakeBody.push([foodX, foodY]);
+placeFood();
+}
+}
+snakeBody[i] = snakeBody[i-1];
+}
+igut
+i

@@ -177,7 +177,7 @@ placeFood();
 }
 snakeBody[i] = snakeBody[i-1];
 }
-i
+igut
 i
 }
 
