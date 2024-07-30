@@ -6,3 +6,39 @@
     box-sizing: border-box;
     font-family:'poppins', sans-serif ;
 }
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width:1300px;
+    padding:0 80px;
+    margin:auto;
+}
+/*navbar styling */
+.navbar{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 30px 0;
+    /*ackground-color: crimson;*/
+    font-family:'ubuntu', sans-serif ;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: black;
+    font-size: 18px;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+ }
+ .navbar .menu li a:hover{
+     color:crimson;
+ }
