@@ -74,7 +74,7 @@ html{
 /*home styling*/
 .home{
     display: flex;
-    background-image:url('home1.jpeg');
+    background-image:url('imgmain1.jpg');
     background-position: center;
     background-position-y:1px ;
     background-repeat: no-repeat;
@@ -254,6 +254,9 @@ section{
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.services .serv-content .card a{
+    color: white;
 }
 .services .serv-content .card:hover{
     background: crimson;
