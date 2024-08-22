@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'poppins', sans-serif ;
+    text-decoration: none;
 }
 html{
     scroll-behavior: smooth;
@@ -19,13 +20,14 @@ html{
     position: fixed;
     z-index: 99;
     width: 100%;
-    padding: 30px 0;
-    /*ackground-color: crimson;*/
+    padding: 20px 0;
+    background-color: crimson;
     font-family:'ubuntu', sans-serif ;
     transition: all 0.3s ease;
 }
 .navbar .max-width{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .navbar .menu li{
